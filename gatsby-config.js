@@ -3,7 +3,8 @@ module.exports = {
     title: `Gatsby Default Starter test`,
     description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
     author: `@gatsbyjs`,
-    testData: `this is a new node of data`
+    testData: `this is a new node of data`,
+    siteUrl: `https://stupefied-swirles-ee60d8.netlify.com/`
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -19,11 +20,11 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `Blog test`,
+        short_name: `Btest`,
         start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
+        background_color: `#534763`,
+        theme_color: `#534763`,
         display: `minimal-ui`,
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
@@ -47,10 +48,13 @@ module.exports = {
 
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
+    `gatsby-plugin-netlify-cms`,
+    `gatsby-plugin-sitemap`,
+    `gatsby-plugin-offline`,
+    `gatsby-plugin-netlify`, // ALWAYS THE LAST
 
-    `gatsby-plugin-netlify`,
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
+
   ],
 }
